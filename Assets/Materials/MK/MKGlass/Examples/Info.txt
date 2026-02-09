@@ -1,0 +1,2 @@
+For demonstration purposes some assets of the "Standard Assets" are included into the examples.
+Standard Assets: https://assetstore.unity.com/packages/essentials/asset-packs/standard-assets-for-unity-2018-4-32351
