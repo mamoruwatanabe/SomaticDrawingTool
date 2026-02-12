@@ -3,6 +3,8 @@ BuiltFile/
 Build/
 Builds/
 Artifacts/
+Assets/Audio/Harry/
+Assets/Audio/Takako/
 
 # Burst debug output
 **/*_BurstDebugInformation_DoNotShip*/
