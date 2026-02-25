@@ -6,17 +6,47 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/Loading.unity
-    guid: 986988be0805f97429165d132ec1d34b
-  - enabled: 0
-    path: Assets/Scenes/Main.unity
-    guid: 07df4d63df340f74ca58824df3cab9ea
-  - enabled: 0
-    path: Assets/Scenes/Angelina-v1.unity
+    path: Assets/Scenes/Previous Scenes/Angelina-v1.unity
     guid: 213c062568410c549bffaf0bb9495d54
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/00_Basic.unity
     guid: 0d6267b78a79c134a9a6b24ba3ee5a21
+  - enabled: 1
+    path: Assets/Scenes/01_Intro.unity
+    guid: d787f71cc32b70b4da94d1ad9a90cc7c
+  - enabled: 1
+    path: Assets/Scenes/02_Select.unity
+    guid: 4ef9b75340df4c3499268644c9f3d5d6
+  - enabled: 1
+    path: Assets/Scenes/03-2_AudioGuide-GC.unity
+    guid: 349d259438507ae4d87134a20691e853
+  - enabled: 1
+    path: Assets/Scenes/04-1_ExperienceViewer-AT.unity
+    guid: 2599a9d644f67bf4683cfa55cde9f7ed
+  - enabled: 1
+    path: Assets/Scenes/03-1_AudioGuide-AT.unity
+    guid: a3bbc6c511c3f024580292fc85ee1c47
+  - enabled: 1
+    path: Assets/Scenes/03-3_AudioGuide-CV.unity
+    guid: 201078388e17b2148932ee2b38954f4a
+  - enabled: 1
+    path: Assets/Scenes/03-4_AudioGuide-AV.unity
+    guid: aa8a33f155a533845b29755f71046564
+  - enabled: 1
+    path: Assets/Scenes/03-5_AudioGuide-GC.unity
+    guid: adefe4219f04dca4b9808f5b9ce8dd58
+  - enabled: 1
+    path: Assets/Scenes/04-2_ExperienceViewer-GC.unity
+    guid: 2de41e9bf49ef5347aeb730c8f54d092
+  - enabled: 1
+    path: Assets/Scenes/04-3_ExperienceViewer-CV.unity
+    guid: 6fa26effaa86da74ca87ca3ec452b25d
+  - enabled: 1
+    path: Assets/Scenes/04-4_ExperienceViewer-GC-SS.unity
+    guid: e55c2437908dc4c49a7f1296d0cd8c3f
+  - enabled: 1
+    path: Assets/Scenes/04-5_ExperienceViewer-AV.unity
+    guid: 7b9cb127e40d82e4ebb6e928430d088f
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 71fe6cc6ea2fd8841ab44d5442834cc6,
       type: 2}

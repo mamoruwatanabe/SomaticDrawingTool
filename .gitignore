@@ -1,11 +1,16 @@
-# Build outputs
-BuiltFile/
-Build/
-Builds/
-Artifacts/
-Assets/Audio/Harry/
-Assets/Audio/Takako/
+[Ll]ibrary/
+[Tt]emp/
+[Bb]ee/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
 
-# Burst debug output
-**/*_BurstDebugInformation_DoNotShip*/
-**/BurstDebugInformation_DoNotShip*/
+# MemoryCaptures
+MemoryCaptures/
+
+# Asset meta data should be tracked
+!Assets/**/*.meta
+
+# Crash reports
+sysinfo.txt
