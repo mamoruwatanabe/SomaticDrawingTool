@@ -85,19 +85,28 @@ public class XRViewSwitcher : MonoBehaviour
     }
 
     void ApplyView(int index)
-    {
-        Transform target = views[index];
+{
+    Transform target = views[index];
 
-        Vector3 newPos = target.position;
-        if (preserveHeight)
-            newPos.y = xrOrigin.transform.position.y;
+    // Move XR Origin XZ directly to the target - no head tracking compensation.
+    // Head tracking X/Z offset is physical and should not affect teleport destination.
+    Vector3 newPos = target.position;
 
-        Quaternion newRot = yawOnly
-            ? Quaternion.Euler(0f, target.eulerAngles.y, 0f)
-            : target.rotation;
+    // Only adjust Y so the camera (eyes) lands at the view's Y position,
+    // accounting for the static camera floor offset.
+    float cameraFloorOffset = xrOrigin.Camera.transform.position.y - xrOrigin.transform.position.y;
+    newPos.y = target.position.y - cameraFloorOffset;
 
-        xrOrigin.transform.SetPositionAndRotation(newPos, newRot);
+    if (preserveHeight)
+        newPos.y = xrOrigin.transform.position.y;
 
-        Debug.Log($"XRViewSwitcher: Switched to view {index} ({target.name})");
-    }
+    Quaternion newRot = yawOnly
+        ? Quaternion.Euler(0f, target.eulerAngles.y, 0f)
+        : target.rotation;
+
+    xrOrigin.transform.SetPositionAndRotation(newPos, newRot);
+
+    Debug.Log($"XRViewSwitcher: Switched to view {index} ({target.name})");
+}
+
 }
