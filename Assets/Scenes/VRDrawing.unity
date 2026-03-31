@@ -545,7 +545,7 @@ MonoBehaviour:
   _brushPoint: {fileID: 902744662}
   _elementDistance: 0.05
   _paintDelay: 0.5
-  _material: {fileID: 2100000, guid: 2941333e74caa614fabd9972e2e19ea4, type: 2}
+  _material: {fileID: 2100000, guid: 68f7ac4c1e7c39e439e4b17ca837abad, type: 2}
   _brushSize: 0.02
   _colors:
   - {r: 0, g: 0, b: 1, a: 1}
@@ -1045,6 +1045,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sphere-Invert
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8a49e81ef9b4eab4c90cca4d7d8340a4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6317578925029434746, guid: 8a49e81ef9b4eab4c90cca4d7d8340a4,
         type: 3}
