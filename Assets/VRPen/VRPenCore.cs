@@ -7,7 +7,6 @@ namespace VRPenNamespace
 {
     internal class VRPenCore
     {
-        // ... (Keep existing fields: BrushSize, BrushColor, etc.)
         public float      BrushSize;
         public Color      BrushColor;
         public Vector3    BrushPosition;
@@ -35,9 +34,31 @@ namespace VRPenNamespace
                 Vector3.right * shift, Vector3.down * shift, Vector3.back * shift
             };
 
-            _penMesh.triangles = new[] { 1, 0, 2, 2, 0, 3, 3, 0, 4, 4, 0, 1, 1, 5, 2, 2, 5, 3, 3, 5, 4, 4, 5, 1 };
-            _penMesh.colors = Enumerable.Repeat(Color.white, _penMesh.vertexCount).ToArray();
+            _penMesh.uv = new[]
+            {
+                new Vector2(0.5f, 1f),   // Forward tip
+                new Vector2(0f, 0.5f),   // Left
+                new Vector2(0.5f, 0.5f), // Up (Center)
+                new Vector2(1f, 0.5f),   // Right
+                new Vector2(0.5f, 0f),   // Down
+                new Vector2(0.5f, 0f)    // Back tip
+            };
 
+            _penMesh.triangles = new[]
+            {
+                1, 0, 2,
+                2, 0, 3,
+                3, 0, 4,
+                4, 0, 1,
+
+                1, 5, 2,
+                2, 5, 3,
+                3, 5, 4,
+                4, 5, 1,
+            };
+
+            _penMesh.colors = Enumerable.Repeat(Color.white, _penMesh.vertexCount).ToArray();
+            
             _brushPB ??= new MaterialPropertyBlock();
             _brushPB.SetColor(_Color, BrushColor);
         }
@@ -182,10 +203,20 @@ namespace VRPenNamespace
             }
         }
 
-        // ... (Keep existing SetColor, SetBrushPoint, etc.)
         public void AddPoint(Vector3 position, bool load) => _currentMesh.AddPoint(position, load);
-        public void SetColor(Color color) { /* Same as before */ }
-        public void SetBrushPoint(Vector3 pos, Quaternion rot) { /* Same as before */ }
+        public void SetColor(Color color)
+        {
+            if (color == BrushColor) return;
+            BrushColor = color;
+
+            _brushPB ??= new MaterialPropertyBlock();
+            _brushPB.SetColor(_Color, BrushColor);
+        }
+        public void SetBrushPoint(Vector3 pos, Quaternion rot)
+        {
+            BrushPosition = pos;
+            BrushRotation = rot;
+        }
 
         public void SetLast(Vector3 brushPosition)
         {
