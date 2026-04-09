@@ -332,6 +332,7 @@
     <Compile Include="Assets\ThirdParty\LIV\Scripts\SDKUniversalRender.cs" />
     <Compile Include="Assets\Scripts\Rendering\FfmpegPipe.cs" />
     <Compile Include="Assets\ThirdParty\TiltBrushToolkit\Scripts\Gltf\GltfMaterialConverter.cs" />
+    <Compile Include="Assets\Scripts\VisibilityToggle.cs" />
     <Compile Include="Assets\Scripts\Playback\StrokePlayback.cs" />
     <Compile Include="Assets\Scripts\Util\GitUtils.cs" />
     <Compile Include="Assets\Scripts\PlyReader.cs" />
@@ -567,6 +568,7 @@
     <Compile Include="Assets\Scripts\GUI\KeyboardPopupButton.cs" />
     <Compile Include="Assets\Scripts\Tutorials\InteractIntroPanelPromo.cs" />
     <Compile Include="Assets\ThirdParty\TiltBrushToolkit\Scripts\Gltf\Gltf1Schema.cs" />
+    <Compile Include="Assets\Scripts\ModelSelect.cs" />
     <Compile Include="Assets\ThirdParty\Reaktion\Gear\LightGear.cs" />
     <Compile Include="Assets\Scripts\GUI\AppSettingsPanel.cs" />
     <Compile Include="Assets\Scripts\PreviewCubeScript.cs" />
