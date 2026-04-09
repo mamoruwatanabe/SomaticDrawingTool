@@ -47,6 +47,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/04-5_ExperienceViewer-AV.unity
     guid: 7b9cb127e40d82e4ebb6e928430d088f
+  - enabled: 1
+    path: Assets/Scenes/VRDrawing.unity
+    guid: 7e1ae44cb3bfdc74db678297321e1442
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 71fe6cc6ea2fd8841ab44d5442834cc6,
       type: 2}
