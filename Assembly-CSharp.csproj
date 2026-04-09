@@ -226,6 +226,7 @@
     <Compile Include="Assets\Scripts\Input\DetectLogitechVrPen.cs" />
     <Compile Include="Assets\Scripts\Tools\RepaintTool.cs" />
     <Compile Include="Assets\Scripts\API\CssColors.cs" />
+    <Compile Include="Assets\IntenseNation\Ultimate Music Player\Scripts\MusicPlayer.cs" />
     <Compile Include="Assets\Scripts\Debug\Statistics.cs" />
     <Compile Include="Assets\Scripts\Brushes\HullBrush.cs" />
     <Compile Include="Assets\Scripts\App\IntroUI.cs" />
@@ -340,6 +341,7 @@
     <Compile Include="Assets\Scripts\VisualizerManager.cs" />
     <Compile Include="Assets\Scripts\BrushController.cs" />
     <Compile Include="Assets\Scripts\GUI\SketchesPanel.cs" />
+    <Compile Include="Assets\IntenseNation\Ultimate Music Player\Scripts\Song.cs" />
     <Compile Include="Assets\Scripts\GUI\LightButton.cs" />
     <Compile Include="Assets\Scripts\Tools\FreePaintTool.cs" />
     <Compile Include="Assets\Scripts\Multiplayer\Photon\PhotonStructs.cs" />
@@ -514,6 +516,7 @@
     <Compile Include="Assets\Scripts\TransformGizmoScript.cs" />
     <Compile Include="Assets\Scripts\GUI\BaseTray.cs" />
     <Compile Include="Assets\Scripts\Commands\BreakModelApartCommand.cs" />
+    <Compile Include="Assets\IntenseNation\Ultimate Music Player\Scripts\Extras\AdvancedMusicPlayer.cs" />
     <Compile Include="Assets\Scripts\GUI\LongPressActionButton.cs" />
     <Compile Include="Assets\Scripts\Brushes\QuadStripUnitizedUVBrush.cs" />
     <Compile Include="Assets\Scripts\GUI\UIComponent.cs" />
@@ -676,6 +679,7 @@
     <Compile Include="Assets\Scripts\Commands\MovePositionKnotCommand.cs" />
     <Compile Include="Assets\Scripts\CameraPathFovKnot.cs" />
     <Compile Include="Assets\Scripts\IReferenceItemCatalog.cs" />
+    <Compile Include="Assets\IntenseNation\Ultimate Music Player\Scripts\MusicPlayerHud.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets\Scripts\Commands\SymmetryWidgetVisibleCommand.cs" />
     <Compile Include="Assets\Scripts\ScreenshotManager.cs" />
