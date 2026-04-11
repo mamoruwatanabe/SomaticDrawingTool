@@ -340,8 +340,8 @@
     <Compile Include="Assets\Scripts\Util\ListExtensions.cs" />
     <Compile Include="Assets\Scripts\VisualizerManager.cs" />
     <Compile Include="Assets\Scripts\BrushController.cs" />
-    <Compile Include="Assets\Scripts\GUI\SketchesPanel.cs" />
     <Compile Include="Assets\IntenseNation\Ultimate Music Player\Scripts\Song.cs" />
+    <Compile Include="Assets\Scripts\GUI\SketchesPanel.cs" />
     <Compile Include="Assets\Scripts\GUI\LightButton.cs" />
     <Compile Include="Assets\Scripts\Tools\FreePaintTool.cs" />
     <Compile Include="Assets\Scripts\Multiplayer\Photon\PhotonStructs.cs" />
